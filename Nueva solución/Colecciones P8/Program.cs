@@ -60,7 +60,7 @@ namespace Colecciones_P8
                 {
                     Console.WriteLine("Qué curp desea borrar");
                     int borrar = int.Parse(Console.ReadLine());
-                    Curps.Remove(borrar);
+                    Curps.RemoveAt(borrar);
                     cond = true;
                 }
                 else
@@ -68,12 +68,7 @@ namespace Colecciones_P8
                     cond = false;
                 }
 
-                Console.WriteLine("La lista de CURPS es la siguiente");
-                for (int i = 0; i < 4; i++)
-                {
-                    string cur = Curps[i].ToString();
-                    Console.WriteLine("{0}.- \t {1}", i, cur);
-                }
+               
             }
             while (cond == true);
 
