@@ -7,6 +7,7 @@ namespace Colecciones_P8
     {
         static void Main()
         {
+            Console.WriteLine("Por favor, introduzca los datos de cuatro personas para crear esa cantidad de curps.");
             Curp c1 = new Curp();
             Curp c2 = new Curp();
             Curp c3 = new Curp();
