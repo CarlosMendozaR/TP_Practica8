@@ -1,12 +1,12 @@
 ﻿using System;
 using System.Collections;
 
-namespace Colección
+namespace Colecciones_P8
 {
     class Program
     {
-       static void Main()
-       {
+        static void Main()
+        {
             Curp c1 = new Curp();
             Curp c2 = new Curp();
             Curp c3 = new Curp();
@@ -21,6 +21,6 @@ namespace Colección
 
 
             Console.ReadLine();
-       }
+        }
     }
 }

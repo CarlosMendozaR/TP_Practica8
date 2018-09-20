@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{7EA1F0DF-1616-4D55-BFFE-2A4FCE9C9DE3}</ProjectGuid>
+    <ProjectGuid>{2E52215B-3E9D-4759-89C7-D27D1C1EEF7A}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>Colección</RootNamespace>
-    <AssemblyName>Colección</AssemblyName>
+    <RootNamespace>Colecciones_P8</RootNamespace>
+    <AssemblyName>Colecciones P8</AssemblyName>
     <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -43,6 +43,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Curp.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

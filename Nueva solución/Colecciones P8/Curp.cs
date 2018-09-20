@@ -1,9 +1,11 @@
 ﻿using System;
+using System.Collections;
 
-public class Curp
+namespace Colecciones_P8
 {
     class Curp
     {
+
         public string CURP;
 
         private string nombre;
@@ -106,5 +108,6 @@ public class Curp
         {
             return CURP;
         }
+
     }
 }
