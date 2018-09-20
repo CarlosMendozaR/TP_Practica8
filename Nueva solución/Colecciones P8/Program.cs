@@ -44,22 +44,38 @@ namespace Colecciones_P8
             Curps.Add(c3);
             Curps.Add(c4);
 
-
-            Console.WriteLine("La lista de CURPS es la siguiente");
-            for (int i = 0; i < 4; i++)
+            bool cond = false;
+            do
             {
-                string cur = Curps[i].ToString();
-                Console.WriteLine("{0}.- \t {1}",i,cur);
-            }
+                Console.WriteLine("La lista de CURPS es la siguiente");
+                for (int i = 0; i < 4; i++)
+                {
+                    string cur = Curps[i].ToString();
+                    Console.WriteLine("{0}.- \t {1}", i, cur);
+                }
 
-            Console.WriteLine("Desea eliminar alguno \n 1) Si \n 2)No");
-            int des=int.Parse(Console.ReadLine());
-            if (des==1)
-            {
-                Console.WriteLine("Qué curp desea borrar");
-                int borrar = int.Parse(Console.ReadLine());
-                Curps.Remove(borrar);
+                Console.WriteLine("Desea eliminar alguno \n 1) Si \n 2)No");
+                int des = int.Parse(Console.ReadLine());
+                if (des == 1)
+                {
+                    Console.WriteLine("Qué curp desea borrar");
+                    int borrar = int.Parse(Console.ReadLine());
+                    Curps.Remove(borrar);
+                    cond = true;
+                }
+                else
+                {
+                    cond = false;
+                }
+
+                Console.WriteLine("La lista de CURPS es la siguiente");
+                for (int i = 0; i < 4; i++)
+                {
+                    string cur = Curps[i].ToString();
+                    Console.WriteLine("{0}.- \t {1}", i, cur);
+                }
             }
+            while (cond == true);
 
 
             Console.ReadLine();
